@@ -102,8 +102,8 @@ const Students = () => {
           isView={isView}
         />
       )}
-      <div className="w-full min-h-[90vh] bg-slate-400 p-5 overflow-hidden">
-        <div className="bg-white rounded-xl p-5 overflow-y-auto">
+      <div className="w-full min-h-[90vh] bg-slate-400 p-5">
+        <div className="bg-white rounded-xl p-5">
           <div className="flex justify-between items-center">
             <h1 className="text-3xl font-bold">Students</h1>
             <button

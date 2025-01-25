@@ -103,146 +103,172 @@ const Modal = ({ isOpen, isClose, studentForm, setStudentForm, isView }) => {
           <hr className="my-3" />
           <div>
             <form onSubmit={handleSubmit}>
-              <div className="flex justify-center items-center gap-3 flex-col sm:flex-row">
-                <input
-                  type="text"
-                  placeholder="Student Name"
-                  className="w-full p-2 rounded-lg mb-2 border"
-                  value={studentForm.name}
-                  onChange={handleChange}
-                  name="name"
-                />
-                {errors.name && (
-                  <p className="text-red-500 text-sm">{errors.name}</p>
-                )}
-                <input
-                  type="text"
-                  placeholder="Student Class"
-                  className="w-full p-2 rounded-lg mb-2 border"
-                  value={studentForm.class}
-                  onChange={handleChange}
-                  name="class"
-                />
-                {errors.class && (
-                  <p className="text-red-500 text-sm">{errors.class}</p>
-                )}
-                <input
-                  type="text"
-                  placeholder="Student Section"
-                  className="w-full p-2 rounded-lg mb-2 border"
-                  value={studentForm.section}
-                  onChange={handleChange}
-                  name="section"
-                />
-                {errors.section && (
-                  <p className="text-red-500 text-sm">{errors.section}</p>
-                )}
+              <div className="flex justify-center items-center gap-3 flex-col sm:flex-row sm:my-6">
+                <div className="w-full">
+                  <input
+                    type="text"
+                    placeholder="Student Name"
+                    className="w-full p-2 rounded-lg mb-2 border"
+                    value={studentForm.name}
+                    onChange={handleChange}
+                    name="name"
+                  />
+                  {errors.name && (
+                    <p className="text-red-500 text-sm">{errors.name}</p>
+                  )}
+                </div>
+
+                <div className="w-full">
+                  <input
+                    type="text"
+                    placeholder="Student Class"
+                    className="w-full p-2 rounded-lg mb-2 border"
+                    value={studentForm.class}
+                    onChange={handleChange}
+                    name="class"
+                  />
+                  {errors.class && (
+                    <p className="text-red-500 text-sm">{errors.class}</p>
+                  )}
+                </div>
+                <div className="w-full">
+                  <input
+                    type="text"
+                    placeholder="Student Section"
+                    className="w-full p-2 rounded-lg mb-2 border"
+                    value={studentForm.section}
+                    onChange={handleChange}
+                    name="section"
+                  />
+                  {errors.section && (
+                    <p className="text-red-500 text-sm">{errors.section}</p>
+                  )}
+                </div>
               </div>
-              <div className="flex justify-center items-center gap-3 flex-col sm:flex-row">
-                <input
-                  type="number"
-                  placeholder="Student Roll Number"
-                  className="w-full p-2 rounded-lg mb-2 border"
-                  value={studentForm.rollNumber}
-                  onChange={handleChange}
-                  name="rollNumber"
-                />
-                {errors.rollNumber && (
-                  <p className="text-red-500 text-sm">{errors.rollNumber}</p>
-                )}
-                <input
-                  type="number"
-                  placeholder="Student Age"
-                  className="w-full p-2 rounded-lg mb-2 border"
-                  value={studentForm.age}
-                  onChange={handleChange}
-                  name="age"
-                />
-                {errors.age && (
-                  <p className="text-red-500 text-sm">{errors.age}</p>
-                )}
-                <input
-                  type="text"
-                  placeholder="Student Address"
-                  className="w-full p-2 rounded-lg mb-2 border"
-                  value={studentForm.address}
-                  onChange={handleChange}
-                  name="address"
-                />
-                {errors.address && (
-                  <p className="text-red-500 text-sm">{errors.address}</p>
-                )}
+              <div className="flex justify-center items-center gap-3 flex-col sm:flex-row sm:my-6">
+                <div className="w-full">
+                  <input
+                    type="number"
+                    placeholder="Student Roll Number"
+                    className="w-full p-2 rounded-lg mb-2 border"
+                    value={studentForm.rollNumber}
+                    onChange={handleChange}
+                    name="rollNumber"
+                  />
+                  {errors.rollNumber && (
+                    <p className="text-red-500 text-sm">{errors.rollNumber}</p>
+                  )}
+                </div>
+                <div className="w-full">
+                  <input
+                    type="number"
+                    placeholder="Student Age"
+                    className="w-full p-2 rounded-lg mb-2 border"
+                    value={studentForm.age}
+                    onChange={handleChange}
+                    name="age"
+                  />
+                  {errors.age && (
+                    <p className="text-red-500 text-sm">{errors.age}</p>
+                  )}
+                </div>
+                <div className="w-full">
+                  <input
+                    type="text"
+                    placeholder="Student Address"
+                    className="w-full p-2 rounded-lg mb-2 border"
+                    value={studentForm.address}
+                    onChange={handleChange}
+                    name="address"
+                  />
+                  {errors.address && (
+                    <p className="text-red-500 text-sm">{errors.address}</p>
+                  )}
+                </div>
               </div>
-              <div className="flex justify-center items-center gap-3 flex-col sm:flex-row">
-                <input
-                  type="number"
-                  placeholder="Student Phone Number"
-                  className="w-full p-2 rounded-lg mb-2 border"
-                  value={studentForm.phoneNumber}
-                  onChange={handleChange}
-                  name="phoneNumber"
-                />
-                {errors.phoneNumber && (
-                  <p className="text-red-500 text-sm">{errors.phoneNumber}</p>
-                )}
-                <input
-                  type="email"
-                  placeholder="Student Email"
-                  className="w-full p-2 rounded-lg mb-2 border"
-                  value={studentForm.email}
-                  onChange={handleChange}
-                  name="email"
-                />
-                {errors.email && (
-                  <p className="text-red-500 text-sm">{errors.email}</p>
-                )}
-                <input
-                  type="text"
-                  placeholder="Student Father Name"
-                  className="w-full p-2 rounded-lg mb-2 border"
-                  value={studentForm.fatherName}
-                  onChange={handleChange}
-                  name="fatherName"
-                />
-                {errors.fatherName && (
-                  <p className="text-red-500 text-sm">{errors.fatherName}</p>
-                )}
+              <div className="flex justify-center items-center gap-3 flex-col sm:flex-row sm:my-6">
+                <div className="w-full">
+                  <input
+                    type="number"
+                    placeholder="Student Phone Number"
+                    className="w-full p-2 rounded-lg mb-2 border"
+                    value={studentForm.phoneNumber}
+                    onChange={handleChange}
+                    name="phoneNumber"
+                  />
+                  {errors.phoneNumber && (
+                    <p className="text-red-500 text-sm">{errors.phoneNumber}</p>
+                  )}
+                </div>
+
+                <div className="w-full">
+                  <input
+                    type="email"
+                    placeholder="Student Email"
+                    className="w-full p-2 rounded-lg mb-2 border"
+                    value={studentForm.email}
+                    onChange={handleChange}
+                    name="email"
+                  />
+                  {errors.email && (
+                    <p className="text-red-500 text-sm">{errors.email}</p>
+                  )}
+                </div>
+                <div className="w-full">
+                  <input
+                    type="text"
+                    placeholder="Student Father Name"
+                    className="w-full p-2 rounded-lg mb-2 border"
+                    value={studentForm.fatherName}
+                    onChange={handleChange}
+                    name="fatherName"
+                  />
+                  {errors.fatherName && (
+                    <p className="text-red-500 text-sm">{errors.fatherName}</p>
+                  )}
+                </div>
               </div>
-              <div className="flex justify-center items-center gap-3 flex-col sm:flex-row">
-                <input
-                  type="text"
-                  placeholder="Student Mother Name"
-                  className="w-full p-2 rounded-lg mb-2 border"
-                  value={studentForm.motherName}
-                  onChange={handleChange}
-                  name="motherName"
-                />
-                {errors.motherName && (
-                  <p className="text-red-500 text-sm">{errors.motherName}</p>
-                )}
-                <input
-                  type="number"
-                  placeholder="Parent Phone Number"
-                  className="w-full p-2 rounded-lg mb-2 border"
-                  value={studentForm.parentPhone}
-                  onChange={handleChange}
-                  name="parentPhone"
-                />
-                {errors.parentPhone && (
-                  <p className="text-red-500 text-sm">{errors.parentPhone}</p>
-                )}
-                <input
-                  type="text"
-                  placeholder="Student ID"
-                  className="w-full p-2 rounded-lg mb-2 border"
-                  value={studentForm.id}
-                  onChange={handleChange}
-                  name="id"
-                  readOnly={studentForm.isEdit}
-                />
-                {errors.id && (
-                  <p className="text-red-500 text-sm">{errors.id}</p>
-                )}
+              <div className="flex justify-center items-center gap-3 flex-col sm:flex-row sm:my-6">
+                <div className="w-full">
+                  <input
+                    type="text"
+                    placeholder="Student Mother Name"
+                    className="w-full p-2 rounded-lg mb-2 border"
+                    value={studentForm.motherName}
+                    onChange={handleChange}
+                    name="motherName"
+                  />
+                  {errors.motherName && (
+                    <p className="text-red-500 text-sm">{errors.motherName}</p>
+                  )}
+                </div>
+                <div className="w-full">
+                  <input
+                    type="number"
+                    placeholder="Parent Phone Number"
+                    className="w-full p-2 rounded-lg mb-2 border"
+                    value={studentForm.parentPhone}
+                    onChange={handleChange}
+                    name="parentPhone"
+                  />
+                  {errors.parentPhone && (
+                    <p className="text-red-500 text-sm">{errors.parentPhone}</p>
+                  )}
+                </div>
+                <div className="w-full">
+                  <input
+                    type="text"
+                    placeholder="Student ID"
+                    className="w-full p-2 rounded-lg mb-2 border"
+                    value={studentForm.id}
+                    onChange={handleChange}
+                    name="id"
+                    readOnly={studentForm.isEdit}
+                  />
+                  {errors.id && (
+                    <p className="text-red-500 text-sm">{errors.id}</p>
+                  )}
+                </div>
               </div>
               {!isView && (
                 <div className="flex justify-center items-center mt-10">

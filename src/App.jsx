@@ -15,7 +15,7 @@ function AppContent() {
   const showNav = location.pathname !== "/";
 
   return (
-    <div className="overflow-hidden">
+    <div>
       {showNav && <Navbar />}
       <Routes>
         <Route path="/" element={<Login />} />
