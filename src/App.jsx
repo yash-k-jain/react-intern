@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import Login from "./components/Login";
 import Students from "./components/Students";
-import SignUp from "./components/signup";
+// import SignUp from "./components/signup";
 
 function AppContent() {
   const location = useLocation();
