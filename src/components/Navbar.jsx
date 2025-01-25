@@ -36,10 +36,12 @@ const Navbar = () => {
             {currentUser ? (
               <>
                 <span className="text-white">Hello, {currentUser.email}</span>
-                <Link to={"/student"} className="text-white">Students</Link>
+                <Link to={"/student"} className="text-white">
+                  Students
+                </Link>
                 <button
                   onClick={handleLogout}
-                  className="text-white bg-red-500 px-4 py-2 rounded-lg hover:bg-red-600"
+                  className="text-white bg-red-500 px-4 py-2 rounded-lg hover:bg-red-600 cursor-pointer"
                 >
                   Logout
                 </button>
